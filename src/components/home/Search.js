@@ -4,12 +4,12 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 
 // Searchbar
-function Search({ searchField }) {
+function Search({ handleInput }) {
   return (
     <InputGroup className="search">
       <FormControl
         placeholder="Search..."
-        onChange={(e) => searchField(e)}
+        onChange={(e) => handleInput(e)}
         role="search-input"
       />
     </InputGroup>
@@ -17,7 +17,7 @@ function Search({ searchField }) {
 }
 
 Search.propTypes = {
-  searchField: PropTypes.func.isRequired,
+  handleInput: PropTypes.func.isRequired,
 };
 
 export default Search;

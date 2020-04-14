@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Home from "../home/Home";
 import Container from "react-bootstrap/Container";
-//import Character from "../amiiboDetails/Character";
+import Character from "../character/Character";
 
 // Navigation Menu
 function NavMenu() {
@@ -37,7 +37,7 @@ function NavMenu() {
       <Container>
         <Switch>
           <Route path="/" exact component={Home} />
-          {/*<Route path="/character/:character" component={Character} />*/}
+          <Route path="/cards/:id" component={Character} />
         </Switch>
       </Container>
     </Router>

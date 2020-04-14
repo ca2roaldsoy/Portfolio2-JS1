@@ -22,10 +22,10 @@ function Home() {
       .finally(() => setLoading(false));
   }, []);
 
-  const SearchField = (e) => {
+  const handleInput = (e) => {
     const lowerValue = e.target.value.toLowerCase();
-    const filterSearch = cards.filter((card) => {
-      if (card.name.toLowerCase.indexOf(lowerValue) !== -1) {
+    const filterSearch = cards.filter(function (card) {
+      if (card.name.toLowerCase().indexOf(lowerValue) !== -1) {
         return true;
       } else {
         return false;
@@ -42,17 +42,20 @@ function Home() {
   function searchResult() {
     if (filterCards.length === 0) {
       return (
-        <section className="[ errorMsg ]">
-          <h4 className="[ errorMsg__title ]">Sorry. No result :( </h4>
-          <p className="[ errorMsg__title--text ]">
-            Please try another search :)
-          </p>
-        </section>
+        <>
+          <Search handleInput={handleInput} role="search" />
+          <section className="[ errorMsg ]">
+            <h4 className="[ errorMsg__title ]">Sorry. No result :( </h4>
+            <p className="[ errorMsg__title--text ]">
+              Please try another search :)
+            </p>
+          </section>
+        </>
       );
     }
 
-    return filterCards.map((card) => {
-      let { name, imageUrl, id } = card;
+    return filterCards.map((c) => {
+      let { name, imageUrl, id } = c;
 
       if (imageUrl === undefined) {
         imageUrl = "https://via.placeholder.com/223x310";
@@ -64,7 +67,7 @@ function Home() {
 
   return (
     <>
-      <Search SearchField={SearchField} role="search" />
+      <Search handleInput={handleInput} role="search" />
       <CardDeck as="main" role="main">
         {searchResult()}
       </CardDeck>

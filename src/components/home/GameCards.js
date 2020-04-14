@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Row, Col, Card, CardImg, Button } from "react-bootstrap";
+import { Col, Card, CardImg, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function GameCards({ name, image, id }) {
   return (
     <Col lg={4}>
-      <Link to={"character/" + id}>
+      <Link to={"cards/" + id}>
         <Card>
           <Card.Title>{name}</Card.Title>
           <Card.Body>
