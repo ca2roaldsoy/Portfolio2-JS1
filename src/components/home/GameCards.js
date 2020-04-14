@@ -6,13 +6,15 @@ import { Link } from "react-router-dom";
 function GameCards({ name, image, id }) {
   return (
     <Col lg={4}>
-      <Card>
-        <Card.Title>{name}</Card.Title>
-        <Card.Body>
-          <CardImg src={image} />
-          <Button variant="primary">View More</Button>
-        </Card.Body>
-      </Card>
+      <Link to={"character/" + id}>
+        <Card>
+          <Card.Title>{name}</Card.Title>
+          <Card.Body>
+            <CardImg src={image} />
+            <Button variant="primary">View More</Button>
+          </Card.Body>
+        </Card>
+      </Link>
     </Col>
   );
 }
