@@ -7,7 +7,7 @@ function About() {
     <Row className="about">
       <Col sm={12}>
         <h2 className="about__title">About</h2>
-        <p className="about__title--text">
+        <p className="about__text">
           First published in 1993 by Wizards of the Coast, Magic was the first
           trading card game produced and it continues to thrive, with
           approximately twenty million players as of 2015. Magic can be played
@@ -21,7 +21,7 @@ function About() {
           through the Internet-based Magic: The Gathering Online, or on a
           smartphone or tablet, or through other programs.
         </p>
-        <p className="about__title--text">
+        <p className="about__text">
           Each game represents a battle between wizards known as
           "planeswalkers", who employ spells, artifacts, and creatures depicted
           on individual Magic cards to defeat their opponents. Although the
@@ -31,7 +31,7 @@ function About() {
           adventure games, while having substantially more cards and more
           complex rules than many other card games.
         </p>
-        <p className="about__title--text">
+        <p className="about__text">
           New cards are released on a regular basis through expansion sets. An
           organized tournament system played at an international level and a
           worldwide community of professional Magic players has developed, as
