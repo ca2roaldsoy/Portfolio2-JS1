@@ -1,12 +1,14 @@
+@import "variables";
+
 .navbar-brand a {
-  color: white;
+  color: $white;
   text-decoration: none;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: $white;
 
   &.active {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $white;
   }
 }

@@ -1,5 +1,7 @@
+@import "variables";
+
 .container {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba($black, 0.5);
   padding: 25px;
   margin-top: 25px;
 }
@@ -26,7 +28,7 @@
 
     &--text {
       padding-top: 10px;
-      color: green;
+      color: $green;
     }
   }
 }
@@ -39,16 +41,16 @@
 // Card
 .card {
   margin: 25px;
-  box-shadow: 1px 1px black;
+  box-shadow: 1px 1px $black;
 
   &:hover {
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba($black, 0.5);
   }
 
   &__title {
     text-align: center;
     margin-top: 25px;
-    color: black;
+    color: $black;
   }
 
   &__button {
@@ -71,7 +73,7 @@
   overflow-wrap: break-word;
   background: none;
   color: white;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $black;
 }
 
 .character__img {
@@ -84,7 +86,7 @@
 
 .about {
   margin: 25px auto;
-  color: white;
+  color: $white;
 }
 
 // Accordion
@@ -92,8 +94,8 @@
   &__header {
     display: flex;
     justify-content: space-between;
-    background-color: blue;
-    color: white;
+    background-color: #0000ff;
+    color: $white;
 
     &:hover {
       cursor: pointer;
@@ -105,7 +107,7 @@
     }
 
     &--text {
-      color: black;
+      color: $black;
     }
   }
 }
@@ -115,7 +117,7 @@
 
 .contact {
   margin: 25px auto;
-  color: white;
+  color: $white;
   padding-bottom: 20px;
 
   &__title {
