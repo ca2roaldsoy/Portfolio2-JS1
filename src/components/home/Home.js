@@ -56,8 +56,9 @@ function Home() {
     return filterCards.map((c) => {
       let { name, imageUrl, id } = c;
 
+      // Remove duplicate cards
       if (imageUrl === undefined) {
-        imageUrl = "https://via.placeholder.com/223x310";
+        return null;
       }
 
       return <GameCards key={id} name={name} image={imageUrl} id={id} />;

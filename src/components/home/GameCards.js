@@ -11,7 +11,7 @@ function GameCards({ name, image, id }) {
           <Card.Title className="card__title">{name}</Card.Title>
           <Card.Body>
             <CardImg src={image} />
-            <Button variant="primary" className="card__button">
+            <Button variant="success" className="card__button">
               View More
             </Button>
           </Card.Body>

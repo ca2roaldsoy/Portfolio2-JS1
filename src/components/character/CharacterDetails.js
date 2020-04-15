@@ -29,10 +29,6 @@ function CharacterDetail() {
     return <Loading />;
   }
 
-  if (detail.imageUrl === undefined) {
-    detail.imageUrl = "none";
-  }
-
   return (
     <Row className="mt-3 character">
       <Col lg={4} sm={12} className="mb-3">
@@ -44,18 +40,18 @@ function CharacterDetail() {
       </Col>
       <Col lg={8} sm={12}>
         <h1>{detail.name}</h1>
-        <ListGroup>
-          <ListGroupItem className="character__imgUrl">
-            <b>Image:</b> {detail.imageUrl}
-          </ListGroupItem>
-          <ListGroupItem className="character__text">
-            <b>Text:</b> {detail.text}
-          </ListGroupItem>
-          <ListGroupItem className="character__rarity">
+        <ListGroup variant="flush">
+          <ListGroupItem>
             <b>Rarity:</b> {detail.rarity}
           </ListGroupItem>
-          <ListGroupItem className="character__color">
+          <ListGroupItem>
             <b>Colors:</b> {detail.colors}
+          </ListGroupItem>
+          <ListGroupItem>
+            <b>Text:</b> {detail.text}
+          </ListGroupItem>
+          <ListGroupItem>
+            <b>ImageUrl:</b> {detail.imageUrl}
           </ListGroupItem>
         </ListGroup>
       </Col>

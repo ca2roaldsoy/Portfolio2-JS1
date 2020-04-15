@@ -17,7 +17,7 @@ import Character from "../character/Character";
 function NavMenu() {
   return (
     <Router>
-      <Navbar bg="primary" variant="dark" role="navigation" expand="md">
+      <Navbar bg="success" variant="dark" role="navigation" expand="md">
         <Navbar.Brand>
           <NavLink to="/" exact role="link">
             Card Game
