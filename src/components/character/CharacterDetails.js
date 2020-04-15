@@ -45,7 +45,7 @@ function CharacterDetail() {
             <b>Rarity:</b> {detail.rarity}
           </ListGroupItem>
           <ListGroupItem>
-            <b>Colors:</b> {detail.colors}
+            <b>Color:</b> {detail.colors}
           </ListGroupItem>
           <ListGroupItem>
             <b>Text:</b> {detail.text}
