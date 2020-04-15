@@ -13,7 +13,6 @@ function Search({ handleInput }) {
         onChange={(e) => handleInput(e)}
         role="search-input"
       />
-      <Button variant="outline-primary">Search</Button>
     </InputGroup>
   );
 }

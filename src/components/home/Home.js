@@ -43,7 +43,6 @@ function Home() {
     if (filterCards.length === 0) {
       return (
         <>
-          <Search handleInput={handleInput} role="search" />
           <section className="[ errorMsg ]">
             <h4 className="[ errorMsg__title ]">Sorry. No result :( </h4>
             <p className="[ errorMsg__title--text ]">
