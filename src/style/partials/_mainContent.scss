@@ -42,3 +42,27 @@
   margin: 0 auto;
   display: block;
 }
+
+/*********** About Page *************
+*************************************/
+
+.about {
+  margin: 25px auto;
+}
+
+// Accordion
+.dropDown {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--arrow {
+      align-self: center;
+      font-size: 1.5em;
+    }
+  }
+}

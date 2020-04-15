@@ -8,6 +8,7 @@ import {
   NavLink,
 } from "react-router-dom";
 import Home from "../home/Home";
+import About from "../about/About";
 import Container from "react-bootstrap/Container";
 import Character from "../character/Character";
 
@@ -43,6 +44,7 @@ function NavMenu() {
       <Container>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
           <Route path="/cards/:id" component={Character} />
         </Switch>
       </Container>
