@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,7 +23,7 @@ function NavMenu() {
       <Navbar bg="success" variant="dark" role="navigation" expand="md">
         <Navbar.Brand>
           <NavLink to="/" exact role="link">
-            <FontAwesomeIcon icon={faGamepad} className="mr-2" />
+            <FontAwesomeIcon icon={faGamepad} />
             Card Game
           </NavLink>
         </Navbar.Brand>

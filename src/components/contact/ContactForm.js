@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { Button, Form } from "react-bootstrap";
 import Validation from "./Validation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const schema = yup.object().shape({
   firstName: yup.string().required("Firstname is required"),
@@ -65,6 +67,7 @@ function ContactForm() {
 
         <Button type="submit" className="contact__btn" variant="success">
           Submit
+          <FontAwesomeIcon icon={faPaperPlane} className="ml-1" />
         </Button>
       </Form>
     </>

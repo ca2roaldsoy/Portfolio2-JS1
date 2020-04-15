@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Alert, Button } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 
 // Contact input validation
 // if correct display message
