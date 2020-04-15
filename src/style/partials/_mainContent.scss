@@ -84,6 +84,7 @@
 
 .about {
   margin: 25px auto;
+  color: white;
 }
 
 // Accordion
@@ -102,6 +103,10 @@
       align-self: center;
       font-size: 1.5em;
     }
+
+    &--text {
+      color: black;
+    }
   }
 }
 
@@ -110,6 +115,8 @@
 
 .contact {
   margin: 25px auto;
+  color: white;
+  padding-bottom: 20px;
 
   &__title {
     margin: 25px auto;
@@ -118,4 +125,8 @@
   &__btn {
     float: right;
   }
+}
+
+.form-text {
+  color: red;
 }

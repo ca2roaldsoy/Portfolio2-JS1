@@ -63,7 +63,7 @@ function ContactForm() {
           {errors.email && <Form.Text>{errors.email.message}</Form.Text>}
         </Form.Group>
 
-        <Button type="submit" className="contact__btn">
+        <Button type="submit" className="contact__btn" variant="success">
           Submit
         </Button>
       </Form>
