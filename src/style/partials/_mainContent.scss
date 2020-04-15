@@ -1,8 +1,36 @@
+// loader icon
 .spinner {
   display: block;
   margin: 350px auto;
 }
 
+/*********** Home Page *************
+*************************************/
+
+// No search result message
+.errorMsg {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  &__title {
+    margin-top: 50px;
+    color: red;
+
+    &--text {
+      padding-top: 10px;
+      color: green;
+    }
+  }
+}
+
+// Search
+.search {
+  margin: 25px auto;
+}
+
+// Card
 .card {
   margin: 25px;
   box-shadow: 1px 1px black;
@@ -30,9 +58,8 @@
   text-decoration: none;
 }
 
-.search {
-  margin: 25px auto;
-}
+/*********** Character Page *************
+*************************************/
 
 .list-group-item {
   overflow-wrap: break-word;
