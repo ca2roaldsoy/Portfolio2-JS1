@@ -20,8 +20,18 @@ function Form() {
       .email("Please enter a valid email"),
   });
 
+  function onSubmit(data, e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    e.target.reset();
+    setValidated(true);
+
+    setTimeout(() => setValidated(false), 3000);
+  }
+
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit(onSubmit)}>
       <Form.Group>
         <Form.Label>Firstname:</Form.Label>
         <Form.Control name="firstName" placeholder="Firstname" ref={register} />
