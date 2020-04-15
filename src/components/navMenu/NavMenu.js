@@ -15,7 +15,7 @@ import Character from "../character/Character";
 function NavMenu() {
   return (
     <Router>
-      <Navbar bg="dark" variant="dark" role="navigation" expand="md">
+      <Navbar bg="primary" variant="dark" role="navigation" expand="md">
         <Navbar.Brand>
           <NavLink to="/" exact role="link">
             Card Game
@@ -25,9 +25,15 @@ function NavMenu() {
         {/* Include hamburger Menu*/}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="ml-auto">
             <NavLink to="/" exact className="nav-link" role="link">
               Home
+            </NavLink>
+            <NavLink to="/about" exact className="nav-link" role="link">
+              About
+            </NavLink>
+            <NavLink to="/contact" exact className="nav-link" role="link">
+              Contact
             </NavLink>
           </Nav>
         </Navbar.Collapse>
