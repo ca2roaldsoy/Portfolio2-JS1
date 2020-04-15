@@ -55,6 +55,8 @@
   &__header {
     display: flex;
     justify-content: space-between;
+    background-color: blue;
+    color: white;
 
     &:hover {
       cursor: pointer;
