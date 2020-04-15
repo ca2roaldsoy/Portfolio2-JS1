@@ -8,7 +8,7 @@ function Search({ handleInput }) {
   return (
     <InputGroup className="search">
       <FormControl
-        placeholder="Search..."
+        placeholder="Search by name..."
         onChange={(e) => handleInput(e)}
         role="search-input"
       />

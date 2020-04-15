@@ -18,7 +18,7 @@ function NavMenu() {
       <Navbar bg="dark" variant="dark" role="navigation" expand="md">
         <Navbar.Brand>
           <NavLink to="/" exact role="link">
-            CardGame
+            Card Game
           </NavLink>
         </Navbar.Brand>
 

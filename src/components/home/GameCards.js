@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 
 function GameCards({ name, image, id }) {
   return (
-    <Col lg={4}>
-      <Link to={"cards/" + id}>
-        <Card>
-          <Card.Title>{name}</Card.Title>
+    <Col sm={6} lg={4}>
+      <Card>
+        <Link to={"cards/" + id}>
+          <Card.Title className="card__title">{name}</Card.Title>
           <Card.Body>
             <CardImg src={image} />
-            <Button variant="primary">View More</Button>
+            <Button variant="primary" className="card__button">
+              View More
+            </Button>
           </Card.Body>
-        </Card>
-      </Link>
+        </Link>
+      </Card>
     </Col>
   );
 }

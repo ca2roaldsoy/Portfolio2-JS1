@@ -1,0 +1,29 @@
+.card {
+  margin: 25px;
+  box-shadow: 1px 1px black;
+
+  &:hover {
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  &__button {
+    margin: 25px auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 50px;
+  }
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.search {
+  margin: 25px auto;
+}
