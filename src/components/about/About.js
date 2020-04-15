@@ -6,7 +6,7 @@ function About() {
   return (
     <Row className="about">
       <Col sm={12}>
-        <h2 className="about__title">About</h2>
+        <h2>About</h2>
         <p className="about__text">
           First published in 1993 by Wizards of the Coast, Magic was the first
           trading card game produced and it continues to thrive, with

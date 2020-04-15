@@ -6,7 +6,7 @@ function Loading() {
     <>
       <Spinner
         animation="border"
-        variant="primary"
+        variant="success"
         role="status"
         className="spinner"
       />
