@@ -23,7 +23,7 @@ function NavMenu() {
       <Navbar bg="success" variant="dark" role="navigation" expand="md">
         <Navbar.Brand>
           <NavLink to="/" exact role="link">
-            <FontAwesomeIcon icon={faGamepad} />
+            <FontAwesomeIcon icon={faGamepad} className="mr-2" />
             Card Game
           </NavLink>
         </Navbar.Brand>
