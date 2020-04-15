@@ -68,3 +68,18 @@
     }
   }
 }
+
+/*********** Contact Page *************
+*************************************/
+
+.contact {
+  margin: 25px auto;
+
+  &__title {
+    margin: 25px auto;
+  }
+
+  &__btn {
+    float: right;
+  }
+}
