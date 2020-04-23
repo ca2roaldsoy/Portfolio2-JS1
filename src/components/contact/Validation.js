@@ -9,7 +9,7 @@ function Validation({ validated }) {
     return (
       <>
         <Alert variant="success" className="verified">
-          <Alert.Heading>Message Sent</Alert.Heading>
+          <Alert.Heading>Thank You :)</Alert.Heading>
         </Alert>
       </>
     );
