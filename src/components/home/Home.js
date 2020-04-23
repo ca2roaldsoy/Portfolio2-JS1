@@ -67,7 +67,7 @@ function Home() {
 
   return (
     <>
-      <h2 className="text-center">Cards</h2>
+      <h1 className="text-center">Cards</h1>
       <Search handleInput={handleInput} role="search" />
       <CardDeck as="main" role="main">
         {searchResult()}
