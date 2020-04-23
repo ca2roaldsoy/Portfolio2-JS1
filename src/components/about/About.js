@@ -1,12 +1,13 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import DropDown from "./DropDown";
+import Title from "../title/Title";
 
 function About() {
   return (
     <Row className="about">
-      <Col sm={12}>
-        <h2>About</h2>
+      <Col sm={12} as="article" role="article">
+        <Title title="About" role="heading" />
         <p className="about__text">
           First published in 1993 by Wizards of the Coast, Magic was the first
           trading card game produced and it continues to thrive, with
@@ -40,7 +41,7 @@ function About() {
           with prices ranging from a few cents to thousands of dollars.
         </p>
 
-        <DropDown />
+        <DropDown role="contentinfo" />
       </Col>
     </Row>
   );

@@ -34,7 +34,7 @@ function ContactForm() {
   return (
     <>
       <Validation validated={validated} />
-      <Form onSubmit={handleSubmit(onSubmit)}>
+      <Form onSubmit={handleSubmit(onSubmit)} role="form">
         <Form.Group>
           <Form.Label>Firstname</Form.Label>
           <Form.Control
@@ -65,7 +65,12 @@ function ContactForm() {
           {errors.email && <Form.Text>{errors.email.message}</Form.Text>}
         </Form.Group>
 
-        <Button type="submit" className="contact__btn" variant="success">
+        <Button
+          type="submit"
+          className="contact__btn"
+          variant="success"
+          role="button"
+        >
           Submit
           <FontAwesomeIcon icon={faPaperPlane} className="ml-1" />
         </Button>

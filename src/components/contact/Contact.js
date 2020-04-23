@@ -1,10 +1,11 @@
 import React from "react";
 import ContactForm from "./ContactForm";
+import Title from "../title/Title";
 
 function Contact() {
   return (
     <div className="contact">
-      <h2 className="contact__title">Contact us</h2>
+      <Title title="Contact Us" className="contact__title" role="heading" />
       <ContactForm />
     </div>
   );

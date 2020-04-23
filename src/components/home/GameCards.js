@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 function GameCards({ name, image, id }) {
   return (
-    <Col sm={6} lg={4}>
+    <Col sm={6} lg={4} as="section">
       <Card>
         <Link to={"cards/" + id}>
           <Card.Title className="card__title">{name}</Card.Title>
           <Card.Body>
-            <CardImg src={image} />
-            <Button variant="success" className="card__button">
+            <CardImg src={image} alt={name} role="image" />
+            <Button variant="success" className="card__button" role="button">
               View More
             </Button>
           </Card.Body>

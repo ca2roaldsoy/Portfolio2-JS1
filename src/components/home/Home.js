@@ -4,6 +4,7 @@ import Loading from "../loading/Loading";
 import Search from "./Search";
 import CardDeck from "react-bootstrap/CardDeck";
 import GameCards from "./GameCards";
+import Title from "../title/Title";
 
 function Home() {
   const [cards, setCards] = useState([]);
@@ -67,7 +68,7 @@ function Home() {
 
   return (
     <>
-      <h1 className="text-center">Cards</h1>
+      <Title title="Cards" className="text-center" role="heading" />
       <Search handleInput={handleInput} role="search" />
       <CardDeck as="main" role="main">
         {searchResult()}

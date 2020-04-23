@@ -7,7 +7,7 @@ function DropDown() {
   let eKey = 0;
 
   return (
-    <Accordion className="dropDown">
+    <Accordion className="dropDown" as="aside">
       <Card>
         <Accordion.Toggle
           as={Card.Header}
