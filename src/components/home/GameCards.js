@@ -10,7 +10,7 @@ function GameCards({ name, image, id }) {
         <Link to={"cards/" + id}>
           <Card.Title className="card__title">{name}</Card.Title>
           <Card.Body>
-            <CardImg src={image} alt={name} role="image" />
+            <CardImg src={image} alt={name} role="img" />
             <Button variant="success" className="card__button" role="button">
               View More
             </Button>
